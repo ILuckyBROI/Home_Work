@@ -10,14 +10,6 @@ d = (duration//86400) % 3600
 h = (duration//3600) % 24
 m = (duration//60) % 60
 s = duration % 60
-if m < 10:
-    m = ('0' + str(m))
-else:
-    m = m
-if s < 10:
-    s = ('0' + str(s))
-else:
-    s = s
 print('duration = ', duration)
 print(d, 'дн', h, 'час', m, 'мин', s, 'сек')
 #Есть баг при достижении 10 лет все начинается с начала как в
