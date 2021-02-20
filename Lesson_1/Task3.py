@@ -2,14 +2,14 @@
 # Например, задаем число 5 — получаем «5 процентов»,
 # задаем число 2 — получаем «2 процента».Вывести все
 # склонения для проверки
-number = int(input('Введите число '))
+number = int(input('Введите число до 20: '))
 i = 0
 score = 0
 if number == 0:
     print(number, '- процентов')
 elif number == 1:
     print(number, '- процент')
-if number < 5:
+elif number < 5:
     print(number, '- процентa')
 else:
     print(number, '- процентов')
